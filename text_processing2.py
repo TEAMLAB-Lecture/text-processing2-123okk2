@@ -39,8 +39,9 @@ def digits_to_words(input_string):
     for s in digit_string :
         answer_str += list_char[eval(s)] + " "
     answer_str = answer_str.rstrip()
+    digit_string = answer_str
 
-    return answer_str
+    return digit_string
 
 
 """
@@ -86,5 +87,6 @@ def to_camel_case(underscore_str):
         answer_str += ss
     if len(answer_str) > 1 :
         answer_str = answer_str.replace(answer_str[0], answer_str[0].lower(), 1)
+    camelcase_str = answer_str
 
-    return answer_str
+    return camelcase_str
